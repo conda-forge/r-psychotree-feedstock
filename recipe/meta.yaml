@@ -1,4 +1,4 @@
-{% set version = '0.15-4' %}
+{% set version = "0.16-0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/psychotree_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/psychotree/psychotree_{{ version }}.tar.gz
-  sha256: 829251b3d1783e27def78facbc8004c02a1336f415b070ead5847e08a854285a
+  sha256: 88e19e4ed30ecdeb3a97279d3de75ffc65832ad008b119f97e10fa33ea2167d6
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -43,9 +43,7 @@ test:
 about:
   home: https://CRAN.R-project.org/package=psychotree
   license: GPL-2.0-or-later
-  summary: Recursive partitioning based on psychometric models, employing the general MOB algorithm
-    (from package partykit) to obtain Bradley-Terry trees, Rasch trees, rating scale
-    and partial credit trees, and MPT trees.
+  summary: Recursive partitioning based on psychometric models, employing the general MOB algorithm (from package partykit) to obtain Bradley-Terry trees, Rasch trees, rating scale and partial credit trees, and MPT trees.
   license_family: GPL3
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
