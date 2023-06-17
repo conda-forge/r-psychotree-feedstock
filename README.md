@@ -1,11 +1,11 @@
-About r-psychotree
-==================
+About r-psychotree-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-psychotree-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=psychotree
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-psychotree-feedstock/blob/main/LICENSE.txt)
 
 Summary: Recursive partitioning based on psychometric models, employing the general MOB algorithm (from package partykit) to obtain Bradley-Terry trees, Rasch trees, rating scale and partial credit trees, and MPT trees.
 
