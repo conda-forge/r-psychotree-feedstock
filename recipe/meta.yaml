@@ -1,4 +1,4 @@
-{% set version = "0.16-0" %}
+{% set version = "0.16-1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/psychotree_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/psychotree/psychotree_{{ version }}.tar.gz
-  sha256: 88e19e4ed30ecdeb3a97279d3de75ffc65832ad008b119f97e10fa33ea2167d6
+  sha256: 622405ab5d8d1e0241aa38e28079e69a5db274bc4ba2ce91a07ebba6a6a13712
 
 build:
   merge_build_host: true  # [win]
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
