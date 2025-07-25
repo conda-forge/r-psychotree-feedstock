@@ -1,4 +1,4 @@
-{% set version = "0.16-1" %}
+{% set version = "0.16-2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/psychotree_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/psychotree/psychotree_{{ version }}.tar.gz
-  sha256: 622405ab5d8d1e0241aa38e28079e69a5db274bc4ba2ce91a07ebba6a6a13712
+  sha256: ebdbf6fb398a480f4f683e2cb757dd46bb3546660ac6339ea9a635a67766706c
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
