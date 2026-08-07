@@ -3,7 +3,7 @@
 
 package:
   name: r-psychotree
-  version: {{ version|replace("-", "_") }}
+  version: "{{ version|replace("-", "_") }}"
 
 source:
   url:
@@ -25,13 +25,13 @@ requirements:
   host:
     - r-base
     - r-formula
-    - r-partykit >=0.8_4
-    - r-psychotools >=0.4_0
+    - r-partykit >=1.2_9
+    - r-psychotools >=0.7_1
   run:
     - r-base
     - r-formula
-    - r-partykit >=0.8_4
-    - r-psychotools >=0.4_0
+    - r-partykit >=1.2_9
+    - r-psychotools >=0.7_1
 
 test:
   commands:
@@ -39,9 +39,12 @@ test:
     - "\"%R%\" -e \"library('psychotree')\""  # [win]
 
 about:
-  home: https://CRAN.R-project.org/package=psychotree
+  home: https://zeileis.codeberg.page/psychotree/
   license: GPL-2.0-or-later
-  summary: Recursive partitioning based on psychometric models, employing the general MOB algorithm (from package partykit) to obtain Bradley-Terry trees, Rasch trees, rating scale and partial credit trees, and MPT trees.
+summary: Recursive partitioning based on psychometric models, employing the general MOB algorithm
+    (from package partykit) to obtain Bradley-Terry trees, Rasch trees, rating scale
+    and partial credit trees, and MPT trees, trees for 1PL, 2PL, 3PL and 4PL models
+    and generalized partial credit models.
   license_family: GPL3
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
