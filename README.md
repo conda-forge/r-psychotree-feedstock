@@ -3,11 +3,11 @@ About r-psychotree-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-psychotree-feedstock/blob/main/LICENSE.txt)
 
-Home: https://CRAN.R-project.org/package=psychotree
+Home: https://zeileis.codeberg.page/psychotree/
 
 Package license: GPL-2.0-or-later
 
-Summary: Recursive partitioning based on psychometric models, employing the general MOB algorithm (from package partykit) to obtain Bradley-Terry trees, Rasch trees, rating scale and partial credit trees, and MPT trees.
+Summary: Recursive partitioning based on psychometric models, employing the general MOB algorithm (from package partykit) to obtain Bradley-Terry trees, Rasch trees, rating scale and partial credit trees, and MPT trees, trees for 1PL, 2PL, 3PL and 4PL models and generalized partial credit models.
 
 Current build status
 ====================
@@ -40,31 +40,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `r-psychotree` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install r-psychotree
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install r-psychotree
 ```
 
-It is possible to list all of the versions of `r-psychotree` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add r-psychotree
+# for installing globally
+pixi global install r-psychotree
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `r-psychotree` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search r-psychotree --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search r-psychotree --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search r-psychotree --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -76,6 +118,8 @@ mamba repoquery whoneeds r-psychotree --channel conda-forge
 # List dependencies of `r-psychotree`:
 mamba repoquery depends r-psychotree --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
